@@ -1,0 +1,33 @@
+.header {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  margin: 10px 0 0 30px;
+  font-size: 20px;
+}
+
+.header-lable {
+  cursor: pointer;
+}
+
+.header-lable:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  height: 210px;
+  width: 210px;
+  margin: 30px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(33, 33, 33, 0.2);
+}
+
+.box:hover {
+  box-shadow: inset 0 0 10px;
+}

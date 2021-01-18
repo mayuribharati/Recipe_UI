@@ -1,0 +1,44 @@
+.box {
+  height: 100%;
+  padding: 0;
+}
+
+.left-section {
+  border-right: 1px solid black;
+  background-color: #1e1e1d;
+  color: #ffffff;
+  padding-top: 30px;
+  margin-top: 56px;
+
+  a {
+    text-decoration: none;
+    color: #a2a3b7;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  .link-active {
+    color: #ffffff;
+  }
+}
+
+.right-section {
+  margin-top: 56px;
+  padding-left: 0;
+}
+
+.action {
+  height: 35px;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+
+  .icon {
+    margin-right: 8px;
+  }
+}

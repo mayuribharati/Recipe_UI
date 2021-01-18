@@ -1,0 +1,34 @@
+<div class="content">
+  <img
+    class="content-image"
+    src="https://t3.ftcdn.net/jpg/02/04/59/62/240_F_204596209_MzOIEdchl86EfbROQRp0Dm86Z3qWLqoX.jpg"
+    alt="Poha"
+  />
+  <div class="content-details">
+    <div class="head-info">
+      <div class="recipe-title">Kanda Poha</div>
+      <div>
+        <span class="lable">Added By:</span>
+        <span class="info">Mayuri Bharati</span>
+      </div>
+      <div>
+        <span class="lable">Time required:</span>
+        <span class="info">30 mins</span></div>
+    </div>
+    <div class="extra-info">
+      <div>
+        <span class="lable"> Ingredients: </span>
+        <span class="info"> Poha, Kanda, Oil, etc.</span>
+      </div>
+      <div>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat
+        ducimus eveniet corrupti, <span *ngIf="showReadMoreText"> nihil voluptatibus, recusandae
+        necessitatibus possimus minus eum rem. Possimus quasi atque corrupti
+        maiores vitae animi, consequuntur dignissimos harum aut. Non saepe rem
+        quibusdam sed in, sequi tempora ducimus ipsum laborum. Eius laboriosam
+        ut animi laborum, possimus earum? </span> <a *ngIf="!showReadMoreText" (click)="showReadMoreText = !showReadMoreText">...Read More</a>
+        <a *ngIf="showReadMoreText" (click)="showReadMoreText = !showReadMoreText">Read Less</a>
+      </div>
+    </div>
+  </div>
+</div>

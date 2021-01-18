@@ -1,0 +1,16 @@
+.image {
+  height: 150px;
+  width: 210px;
+}
+
+.content {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+
+  .title {
+    margin: auto;
+    font-size: 24px;
+  }
+}
