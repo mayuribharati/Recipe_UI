@@ -1,0 +1,22 @@
+nav {
+  background-color: #1a1a27;
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+span {
+  flex: 1;
+}
+
+.brand {
+  width: 100%;
+}
+
+:host ::ng-deep .fa {
+  color: #ffffff;
+  cursor: pointer;
+}

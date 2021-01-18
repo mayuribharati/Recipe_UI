@@ -1,0 +1,10 @@
+<div class="header">
+  <ng-container *ngFor="let header of headerPath; let last=last">
+    <span [ngClass]="{'header-lable': !last}"> {{ header }}</span> <span *ngIf="!last"> &nbsp;/&nbsp;</span>
+  </ng-container>
+</div>
+<div class="grid">
+  <div class="box" (click)="onBoxClick($event, item)" *ngFor="let item of list">
+      <app-recipe-box-view [id]="item.id" [title]="item.lable" [imageUrl]="item.imageUrl"></app-recipe-box-view>
+  </div>
+</div>
