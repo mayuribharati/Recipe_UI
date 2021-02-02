@@ -11,6 +11,11 @@ import { SettingsComponent } from './settings/settings.component';
 
 const routes: Routes = [
   {
+    path: '',
+    pathMatch: 'full',
+    redirectTo: 'login'
+  },
+  {
     path: 'login',
     component: LoginSignUpComponent
   },
@@ -43,7 +48,7 @@ const routes: Routes = [
         component: SettingsComponent
       }
     ]
-  }
+  },
 ];
 
 @NgModule({

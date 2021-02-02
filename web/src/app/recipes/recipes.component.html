@@ -1,10 +1,14 @@
 <div class="header">
-  <ng-container *ngFor="let header of headerPath; let last=last">
-    <span [ngClass]="{'header-lable': !last}"> {{ header }}</span> <span *ngIf="!last"> &nbsp;/&nbsp;</span>
+  <ng-container *ngFor="let header of headerPath; let index = index; let last=last">
+    <span [ngClass]="{'header-lable': !last}" (click)="onHeaderClick(index, header)"> {{ header }}</span> <span *ngIf="!last"> &nbsp;/&nbsp;</span>
   </ng-container>
+  <div></div>
 </div>
-<div class="grid">
+<div *ngIf="isGridView" class="grid">
   <div class="box" (click)="onBoxClick($event, item)" *ngFor="let item of list">
-      <app-recipe-box-view [id]="item.id" [title]="item.lable" [imageUrl]="item.imageUrl"></app-recipe-box-view>
+      <app-recipe-box-view [id]="item.id" [title]="item.name" [imageUrl]="item.imageUrl"></app-recipe-box-view>
   </div>
+</div>
+<div *ngIf="!isGridView">
+  <app-recipe-details [recipe]="activeRecipe"></app-recipe-details>
 </div>

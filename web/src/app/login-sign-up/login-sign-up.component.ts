@@ -16,6 +16,6 @@ export class LoginSignUpComponent implements OnInit {
 
   onLogin(eventData) {
     console.log('click', eventData);
-    this.router.navigate(['/dashboard']);
+    this.router.navigate(['home', 'dashboard']);
   }
 }

@@ -1,1 +1,36 @@
-<p>cookbook works!</p>
+<ng-container *ngIf="!showForm">
+<div class="header">
+  <div
+    *ngFor="let header of headerPath; let index = index; let last = last"
+  >
+    <span
+      [ngClass]="{ 'header-lable': !last }"
+      (click)="onHeaderClick(index, header)"
+    >
+      {{ header }}</span
+    >
+    <span *ngIf="!last"> &nbsp;/&nbsp;</span>
+  </div>
+  <div class="add-recipe"><button (click)="showRecipeForm()" type="button" class="btn btn-dark">Add Recipe</button></div>
+</div>
+<div *ngIf="!showRecipeDetails" class="grid">
+  <div class="box" (click)="onBoxClick($event, item)" *ngFor="let item of list">
+    <i
+      (click)="deleteRecipe($event, item)"
+      class="fa fa-trash-o delete-icon"
+      aria-hidden="true"
+    ></i>
+    <app-recipe-box-view
+      [id]="item.id"
+      [title]="item.name"
+      [imageUrl]="item.imageUrl"
+    ></app-recipe-box-view>
+  </div>
+</div>
+<div *ngIf="showRecipeDetails">
+  <app-recipe-details></app-recipe-details>
+</div>
+</ng-container>
+<ng-container *ngIf="showForm">
+
+</ng-container>

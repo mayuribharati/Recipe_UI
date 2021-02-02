@@ -9,6 +9,9 @@ import { CommonService } from '../services/common.service';
 export class HomeComponent implements OnInit {
 
   links = [];
+  in: string;
+
+  className ="abc";
 
   constructor(private commonService: CommonService) { }
 

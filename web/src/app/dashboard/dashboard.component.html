@@ -1,7 +1,7 @@
 <div class="container">
     <div class="scroll-area">
-        <div class="recipe"  *ngFor="let item of arr">
-            <app-recipe-short-view></app-recipe-short-view>
+        <div class="recipe" *ngFor="let recipe of arr">
+            <app-recipe-short-view [recipe]="recipe"></app-recipe-short-view>
         </div>
     </div>
 </div>

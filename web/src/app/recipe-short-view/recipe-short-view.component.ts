@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-recipe-short-view',
@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RecipeShortViewComponent implements OnInit {
 
+  @Input()
+  recipe: any;
+  
   showReadMoreText = false;
  
   constructor() { }

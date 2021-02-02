@@ -1,0 +1,13 @@
+<div *ngIf="recipe" class="container">
+    <img class="image" [src]="recipe.imageUrl" alt="Recipe Image">
+    <div *ngFor="let key of objectKeys" class="row text-left recipe-point">
+        <ng-container *ngIf="recipe[key.key]">
+            <div class="col text-left">
+                {{ key.value }}:
+            </div>
+            <div class="col-9 text-left">
+                {{ recipe[key.key] }}
+            </div>
+        </ng-container>
+    </div>
+</div>

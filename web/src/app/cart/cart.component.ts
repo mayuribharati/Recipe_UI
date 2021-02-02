@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CartComponent implements OnInit {
 
+  in: string = "123";
   constructor() { }
 
   ngOnInit(): void {

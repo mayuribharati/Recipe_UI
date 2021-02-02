@@ -15,6 +15,8 @@ import { OrdersComponent } from './orders/orders.component';
 import { SettingsComponent } from './settings/settings.component';
 import { RecipeShortViewComponent } from './recipe-short-view/recipe-short-view.component';
 import { RecipeBoxViewComponent } from './recipe-box-view/recipe-box-view.component';
+import { RecipeDetailsComponent } from './recipe-details/recipe-details.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -30,11 +32,13 @@ import { RecipeBoxViewComponent } from './recipe-box-view/recipe-box-view.compon
     OrdersComponent,
     SettingsComponent,
     RecipeShortViewComponent,
-    RecipeBoxViewComponent
+    RecipeBoxViewComponent,
+    RecipeDetailsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -35,7 +35,7 @@ export class CommonService {
       lable: 'Settings',
       routerLink: ['settings'],
       icon: 'fa fa-cog'
-    }
+    },
   ];
 
   constructor() { }
